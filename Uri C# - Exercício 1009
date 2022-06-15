@@ -1,0 +1,25 @@
+using System;
+
+using System.Globalization;
+
+namespace curso {
+    class Program {
+        static void Main(string[] args){
+
+            string nome;
+            double salarioFixo, vendas, salariototal;
+
+             nome = Console.ReadLine();
+            salarioFixo = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            vendas = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            salariototal = salarioFixo + vendas * 0.15;
+
+            Console.WriteLine("TOTAL = " + salariototal.ToString("F2", CultureInfo.InvariantCulture));
+          
+        
+        }
+
+    }
+
+}
