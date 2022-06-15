@@ -1,21 +1,25 @@
 using System;
+
 using System.Globalization;
-class URI
-{
-    static void Main(string[] args)
-    {
 
-        double pi, area, raio;
+namespace curso {
+    class Program {
+        static void Main(string[] args){
 
-        pi = 3.14159;
+            double area, pi, raio;
 
-        Console.WriteLine("Informe um valor pára raio");
+            pi = 3.14159;
 
-        raio = double.Parse(Console.ReadLine(),CultureInfo.InvariantCulture);
+            raio = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-        area = pi * Math.Pow(raio,2.0);
+            area = pi * raio * raio;
 
-        Console.WriteLine("A=" + area.ToString("F4", CultureInfo.InvariantCulture));     
+            Console.WriteLine("A=" + area.ToString("F4", CultureInfo.InvariantCulture));
+
+
+            
+
+        }
 
     }
 
