@@ -1,0 +1,25 @@
+using System;
+
+using System.Globalization;
+
+namespace curso {
+    class Program {
+        static void Main(string[] args){
+
+            int numeroFuncionatio, horaTrabalhada;
+            double valorHora, salario; 
+
+            numeroFuncionatio = int.Parse(Console.ReadLine());
+            horaTrabalhada = int.Parse(Console.ReadLine());
+            valorHora = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            salario = valorHora * horaTrabalhada;
+
+            Console.WriteLine("NUMBER = " + numeroFuncionatio);
+            Console.WriteLine("SALARY = U$ " + salario.ToString("F2", CultureInfo.InvariantCulture));
+
+        }
+
+    }
+
+}
