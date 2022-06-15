@@ -15,7 +15,7 @@ namespace curso {
 
             salariototal = salarioFixo + vendas * 0.15;
 
-            Console.WriteLine("TOTAL = " + salariototal.ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine("TOTAL = R$ " + salariototal.ToString("F2", CultureInfo.InvariantCulture));
           
         
         }
