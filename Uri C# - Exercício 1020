@@ -1,0 +1,26 @@
+using System;
+
+using System.Globalization;
+
+namespace curso {
+    class Program {
+        static void Main(string[] args) {
+
+            int N, ano1, mes1, dia, resto;
+
+            N = int.Parse(Console.ReadLine());
+
+            ano1 = N / 365;
+            resto = N % 365;
+
+            mes1 = resto / 30;
+            dia = resto % 30;
+
+            Console.WriteLine(ano1 + " ano(s)");
+            Console.WriteLine(mes1 + " mes(es)");
+            Console.WriteLine(dia + " dia(s)");
+        }
+
+    }
+
+}
