@@ -6,10 +6,9 @@ namespace curso {
     class Program {
         static void Main(string[] args) {
 
-            double a, b, c, triangulo, circulo, trapezio, quadrado, retangulo, altura;
-            string[] vet;
+            double a, b, c, triangulo, circulo, trapezio, quadrado, retangulo;
 
-            vet = Console.ReadLine().Split(' ');
+            string[] vet = Console.ReadLine().Split(' ');
             a = double.Parse(vet[0], CultureInfo.InvariantCulture);
             b = double.Parse(vet[1], CultureInfo.InvariantCulture);
             c = double.Parse(vet[2], CultureInfo.InvariantCulture);
