@@ -1,0 +1,30 @@
+using System;
+using System.Globalization;
+
+namespace curso
+{
+    class URI
+    {
+        static void Main(string[] args)
+        {
+
+            string[] vet = Console.ReadLine().Split(' ');
+
+            int Hinicio = int.Parse(vet[0]);
+            int Hfinal = int.Parse(vet[1]);
+
+            int duracao;
+
+            if ( Hinicio < Hfinal)
+            {
+                duracao = Hfinal - Hinicio;
+            }
+
+            else {
+                duracao = 24 - Hinicio + Hfinal;
+               }
+
+            Console.WriteLine("O JOGO DUROU " + duracao + " HORA(S)");
+        }
+    }
+}
